@@ -6,7 +6,9 @@
 
 ## Project Overview 📋
 
-This project utilizes a dataset containing house sale prices in King County, including Seattle, from May 2014 to May 2015. It mirrors real-world real estate analysis, encouraging collaborative problem-solving and practical application of Python in real estate finance.
+This project utilizes a dataset containing house sale prices in King County, Seattle (US), from May 2014 to May 2015. The aim is to leverage our Python, EDA (Exploratory Data Analysis), and Machine Learning skills to analyze and predict house selling prices.
+
+It simulates real-world real estate analysis, promoting collaborative problem-solving and the practical application of Python in real estate finance.
 
 ## Goal 🎯
 
@@ -60,7 +62,23 @@ The goal of this project is to apply our Python and Machine Learning knowledge t
 
 - There is a high number of outliers with exceptionally high house prices, which could affect the model's performance if not addressed.
 
-![Screenshot 2024-05-23 at 15 18 49](https://github.com/davarques/Machine-Learning-Project/assets/160759223/b07742b4-0ceb-4f02-a105-d34d40e37c42)
+![Screenshot 2024-05-23 at 19 00 05](https://github.com/davarques/Machine-Learning-Project/assets/160759223/1d33975c-cf70-4165-a773-eb775ad64ddc)
+
+------------------------------------------------------------------------
+
+### `Price` Exploration
+
+I divided the prices into 5 `price_ranks`: (<250k), (250k-500k), (500k-750k), (750k-1M), (>1M).
+
+<img src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/2e00be0d-f145-400b-9bda-a0ccd556a48b" alt="Machine Learning" width="600">
+
+We can see that most of the house prices are within two rank prices (250k-500k ) & (500k-750k).
+
+Then we looked at Boxplots by `price_rank`:
+
+<img src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/62fd1425-9ada-4251-aafb-436a647e51a7" alt="Machine Learning" width="600">
+
+We observe that most of the outliers are within teh price rank of houses above 1M.
 
 ------------------------------------------------------------------------
 
@@ -70,7 +88,7 @@ In this porject we'll apply three regression supervised machine leraning models:
 
 **Train-test Split = 70% Train / 30% Test**
 
-<img src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/82d402df-0362-4cf4-a089-c509b15849ca" alt="Screenshot 2024-05-23 at 15 57 09" width="650">
+<img width="730" alt="Screenshot 2024-05-23 at 18 21 15" src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/0bbcfcbe-8ff6-4df1-bd3c-7e9e34b0d829">
 
 ------------------------------------------------------------------------
 
@@ -78,18 +96,17 @@ In this porject we'll apply three regression supervised machine leraning models:
 
 We got the following results: 
 
-<img src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/21ece455-b5ee-4109-b02c-3bf6c577f8f9" alt="Screenshot 2024-05-23 at 15 58 56" width="650">
+<img src="https://github.com/davarques/Machine-Learning-Project/assets/160759223/21ece455-b5ee-4109-b02c-3bf6c577f8f9" alt="Screenshot 2024-05-23 at 15 58 56" width="750">
 
 ------------------------------------------------------------------------
 
 ## Conclusion 🔎
 
-Based on the evaluation metrics, the decision tree emerges as the best model for predicting accurate house sale prices in the Seattle (US) market. Here are the key findings:
+Based on the evaluation metrics, the <strong style="color:blue;">decision tree is the best model</strong> for predicting accurate house sale prices in the Seattle (US) market. Here are the key findings:
 
 - **Decision Tree R2**: 0.7366
 - **Decision Tree RMSE**: 194996.9105
 - **Decision Tree MSE**: 38023795092.7977
 - **Decision Tree MAE**: 100868.8284
 
-The decision tree model demonstrates the highest R2 score and the lowest RMSE, MSE, and MAE metrics among the models evaluated. Hence, it is the preferred choice for accurate predictions in this context.
-
+The decision tree model demonstrates the <strong style="color:darkgreen;">highest R2</strong> score and the <strong style="color:red;">lowest RMSE, MSE</strong>, and MAE metrics among the models evaluated. Hence, it is the preferred choice for accurate predictions in this context.
