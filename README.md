@@ -18,7 +18,6 @@ The goal of this project is to apply our Python and Machine Learning knowledge t
 
 3. **Assess the results and choose the best model to deploy**: Evaluate the performance of each model using appropriate metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), etc. Select the most accurate and robust model for deployment in predicting house prices in the King County, Seattle market.
 
-
 ## Dataset 💾
 
 - **Source**: [[Kaggle:] King County, Seattle House Market Price and Sources](https://www.kaggle.com/datasets/minasameh55/king-country-houses-aa)
@@ -50,6 +49,20 @@ The goal of this project is to apply our Python and Machine Learning knowledge t
 - **`sqft_lot15`**: Land space for the nearest 15 neighbors in 2015.
 
 **Target column:** `Price` Our primary focus is to understand which features most significantly impact house prices. Additionally, we aim to explore properties valued at $650K and above for more detailed insights.
+
+## Exploratory Data Analysis 🔬
+
+### EDA Insights
+
+- The price data does not follow a normal distribution, indicating skewness towards lower prices.
+
+![image](https://github.com/davarques/Machine-Learning-Project/assets/160759223/d89decc8-510e-4049-870a-43d2b60dc7ef)
+
+- There is a high number of outliers with exceptionally high house prices, which could affect the model's performance if not addressed.
+
+![Screenshot 2024-05-23 at 15 18 49](https://github.com/davarques/Machine-Learning-Project/assets/160759223/b07742b4-0ceb-4f02-a105-d34d40e37c42)
+
+------------------------------------------------------------------------
 
 ## Machine Learning Models 🤖
 
