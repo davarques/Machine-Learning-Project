@@ -1,6 +1,6 @@
 # Machine Learning Project
 
-<img src="https://datascientest.com/en/wp-content/uploads/sites/9/2021/01/Machine-learning-def-.png" alt="Machine Learning" width="800">
+<img src="https://strapi.biuwer.com/uploads/biuwer_6_business_machine_learning_use_cases_4dba3d6e91.jpg" alt="Machine Learning" width="800">
 
 ## Analyzing and Predicting Housing Market Trends using Machine Learning
 
